@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">BiometricPromptSample</string>
+    <string name="title">Biometric Prompt サンプル</string>
+    <string name="next_screen_description">次の画面に進むには認証が必要です。\n端末に登録された指紋または以下のPINを入力してください。</string>
+    <string name="pin_code">PINコード: 1234</string>
+    <string name="next_screen_button_label">次の画面に進む</string>
+
+    <string name="biometric_unsupported_api_level">未対応OSです。</string>
+    <string name="biometric_unsupported_hardware">この端末は生体認証に対応していません。</string>
+    <string name="biometric_not_has_biometrics_on_hardware">端末に生体情報が登録されていません。</string>
+
+    <string name="result_label">認証成功です！</string>
+    <string name="return_button_label">最初の画面に戻る</string>
 </resources>
