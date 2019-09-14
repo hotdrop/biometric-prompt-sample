@@ -15,4 +15,12 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
 
+    <style name="PinEditText">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
 </resources>

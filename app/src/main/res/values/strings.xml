@@ -1,14 +1,23 @@
 <resources>
     <string name="app_name">BiometricPromptSample</string>
     <string name="title">Biometric Prompt サンプル</string>
-    <string name="next_screen_description">次の画面に進むには認証が必要です。\n端末に登録された指紋または以下のPINを入力してください。</string>
-    <string name="pin_code">PINコード: 1234</string>
-    <string name="next_screen_button_label">次の画面に進む</string>
 
-    <string name="biometric_unsupported_api_level">未対応OSです。</string>
-    <string name="biometric_unsupported_hardware">この端末は生体認証に対応していません。</string>
-    <string name="biometric_not_has_biometrics_on_hardware">端末に生体情報が登録されていません。</string>
+    <string name="main_next_screen_description">次の画面に進むには認証が必要です。\n端末に登録された指紋または以下のPINを入力してください。</string>
+    <string name="main_pin_code_label">PINコード: %1$s</string>
+    <string name="main_next_screen_button">次の画面に進む</string>
 
-    <string name="result_label">認証成功です！</string>
-    <string name="return_button_label">最初の画面に戻る</string>
+    <string name="auth_pin_code_description">PINコードを入力してください。</string>
+    <string name="auth_pin_code_mistake_message">PINコードが間違っています。</string>
+    <string name="auth_biometric_unsupported_api_level">未対応OSです。</string>
+    <string name="auth_biometric_unsupported_hardware">この端末は生体認証に対応していません。</string>
+    <string name="auth_biometric_not_has_biometrics_on_hardware">端末に生体情報が登録されていません。</string>
+    <string name="auth_biometric_cancel">生体認証をキャンセル</string>
+    <string name="auth_biometric_failure">生体認証に失敗しました。</string>
+
+    <string name="biometric_prompt_dialog_title">アプリ認証</string>
+    <string name="biometric_prompt_dialog_description">この機能をご利用する場合は認証が必要です</string>
+    <string name="biometric_prompt_dialog_negative_button_label">PINコードで認証する</string>
+
+    <string name="result_success_label">認証成功です！</string>
+    <string name="result_return_button_label">最初の画面に戻る</string>
 </resources>

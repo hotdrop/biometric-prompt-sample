@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import timber.log.Timber
 
 class MainActivity: AppCompatActivity() {
 
@@ -12,10 +13,17 @@ class MainActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        Timber.plant(Timber.DebugTree())
+        initView()
+    }
+
+    private fun initView() {
         setSupportActionBar(toolbar)
         supportActionBar?.run {
             setDisplayHomeAsUpEnabled(false)
         }
+
+        pinCodeLabel.text = getString(R.string.main_pin_code_label, AuthActivity.pinCode.toString())
 
         nextButton.setOnClickListener {
             AuthActivity.startForResult(this, REQUEST_CODE_TO_AUTH_ACTIVITY)

@@ -32,17 +32,16 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginRight="24dp"
-        android:text="@string/next_screen_description"
+        android:text="@string/main_next_screen_description"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appbarLayout" />
 
     <TextView
-        android:id="@+id/pinCode"
+        android:id="@+id/pinCodeLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/pin_code"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/description" />
@@ -56,9 +55,9 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:textSize="12sp"
-        android:text="@string/next_screen_button_label"
+        android:text="@string/main_next_screen_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pinCode" />
+        app:layout_constraintTop_toBottomOf="@+id/pinCodeLabel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

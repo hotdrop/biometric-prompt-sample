@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#0439BD</color>
     <color name="colorAccent">#314CFC</color>
 
-    <color name="snackbarSolid">#323232</color>
+    <color name="dark">#323232</color>
+    <color name="red">#DA0101</color>
 </resources>
