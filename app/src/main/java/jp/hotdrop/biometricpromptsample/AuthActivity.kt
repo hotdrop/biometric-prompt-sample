@@ -145,6 +145,7 @@ class AuthActivity: AppCompatActivity() {
     companion object {
         // 本当はこれはユーザーが事前に設定しておくもの
         const val pinCode = 3685
+
         fun startForResult(activity: Activity, requestCode: Int) =
                 activity.startActivityForResult(Intent(activity, AuthActivity::class.java), requestCode)
     }

@@ -48,11 +48,11 @@ object BiometricPrompt {
     fun auth(activity: FragmentActivity, onResultListener: (result: Result) -> Unit) {
 
         val promptInfo = BiometricPrompt.PromptInfo
-            .Builder()
-            .setTitle(activity.getString(R.string.biometric_prompt_dialog_title))
-            .setDescription(activity.getString(R.string.biometric_prompt_dialog_description))
-            .setNegativeButtonText(activity.getString(R.string.biometric_prompt_dialog_negative_button_label))
-            .build()
+                .Builder()
+                .setTitle(activity.getString(R.string.biometric_prompt_dialog_title))
+                .setDescription(activity.getString(R.string.biometric_prompt_dialog_description))
+                .setNegativeButtonText(activity.getString(R.string.biometric_prompt_dialog_negative_button_label))
+                .build()
 
         val executor = Executors.newSingleThreadExecutor()
         BiometricPrompt(activity, executor, object: BiometricPrompt.AuthenticationCallback() {
@@ -65,7 +65,7 @@ object BiometricPrompt {
                 super.onAuthenticationError(errorCode, errString)
                 // availableメソッドでチェックしたエラーはここでも検知できる
                 when (errorCode) {
-                    BiometricPrompt.ERROR_HW_NOT_PRESENT, BiometricPrompt.ERROR_HW_UNAVAILABLE ->  {
+                    BiometricPrompt.ERROR_HW_NOT_PRESENT, BiometricPrompt.ERROR_HW_UNAVAILABLE -> {
                         Timber.d("端末に生体認証ハードウェアが搭載されていないなどで利用不可")
                         onResultListener(Result.UnsupportedHardware)
                     }
